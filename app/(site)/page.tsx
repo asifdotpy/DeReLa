@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   // other metadata
 };
 
+{/*The contenct below needs to be changed because I have already commented out the 
+  Menu Data*/}
 export default function Home() {
   return (
     <main>
