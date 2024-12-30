@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
-import menuData from "./menuData";
+/* Menu Data is TEMPORARLY Disabled */
+// import menuData from "./menuData";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
@@ -103,6 +104,8 @@ const Header = () => {
           }`}
         >
           <nav>
+
+            {/* Menu Data starts here}
             <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
               {menuData.map((menuItem, key) => (
                 <li key={key} className={menuItem.submenu && "group relative"}>
@@ -149,6 +152,7 @@ const Header = () => {
                 </li>
               ))}
             </ul>
+            {/* Menu Data ends here */}
           </nav>
 
           <div className="mt-7 flex items-center gap-6 xl:mt-0">
